@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Custom Scrollbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif; /* Font for the sidebar */
+        }
+
+        /* Sidebar container */
+        .sidebar {
+            width: 250px;             /* Width of the sidebar */
+            height: 100vh;            /* Full viewport height */
+            background-color: #f8f9fa; /* Light background color */
+            padding: 20px;            /* Padding inside the sidebar */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+            overflow-y: auto;         /* Enable vertical scrolling */
+        }
+
+        /* Navigation link styles */
+        .nav-link {
+            display: block;           /* Block-level links */
+            padding: 10px 15px;      /* Padding around the links */
+            color: #333;              /* Text color */
+            text-decoration: none;     /* Remove underline */
+            border-radius: 4px;      /* Rounded corners */
+            margin-bottom: 10px;     /* Spacing between links */
+            transition: background 0.3s; /* Smooth background transition */
+        }
+
+        .nav-link:hover {
+            background-color: #e2e6ea; /* Change background on hover */
+        }
+
+        /* Custom scrollbar for WebKit browsers */
+        ::-webkit-scrollbar {
+            width: 8px;               /* Width of the scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;      /* Background of the scrollbar track */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: pink;        /* Color of the scrollbar thumb */
+            border-radius: 4px;       /* Rounded corners for the thumb */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: darkgreen;    /* Darker color on hover */
+        }
+
+        /* Firefox scrollbar customization */
+        .sidebar {
+            scrollbar-width: thin;     /* Thin scrollbar */
+            scrollbar-color: green #f1f1f1; /* Thumb color and track color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Sidebar</h2>
+    <a href="#" class="nav-link">Link 1</a>
+    <a href="#" class="nav-link">Link 2</a>
+    <a href="#" class="nav-link">Link 3</a>
+    <a href="#" class="nav-link">Link 4</a>
+    <a href="#" class="nav-link">Link 5</a>
+    <a href="#" class="nav-link">Link 6</a>
+    <a href="#" class="nav-link">Link 7</a>
+    <a href="#" class="nav-link">Link 8</a>
+    <a href="#" class="nav-link">Link 9</a>
+    <a href="#" class="nav-link">Link 10</a>
+    <a href="#" class="nav-link">Link 11</a>
+    <a href="#" class="nav-link">Link 12</a>
+</div>
+
+</body>
+</html>

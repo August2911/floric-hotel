@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="spacingtech_webify">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- title -->
+	<title>Tempa - The luxury hotel HTML5 template</title>
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="image/favicon/favicon-2.png">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- fontawesome css -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- feather css -->
+	<link rel="stylesheet" type="text/css" href="css/feather.css">
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<!-- owl-carousel css -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<!-- swiper css -->
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+	<!-- slick css -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<!-- magnific-popup css -->
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+	<!-- datepicker css -->
+	<link rel="stylesheet" type="text/css" href="css/datepicker.min.css">
+	<!-- theme css -->
+	<link rel="stylesheet" type="text/css" href="css/main-2.css">
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="css/style-2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style>
+
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body,
+		html {
+			overflow-x: hidden;
+		}
+	/* width */
+
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+} */
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eec6a2; 
+  border-radius: 10px;
+  
+ 
+
+  
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+} */
+		/* navbar */
+
+		.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-zindex: 1045;
+    --bs-offcanvas-width: 400px;
+    --bs-offcanvas-height: 100vh;
+    --bs-body-color: #213368;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1rem;
+    --bs-offcanvas-color: var(--bs-body-color);
+    --bs-offcanvas-bg: var(--bs-body-bg);
+    --bs-offcanvas-border-width: var(--bs-border-width);
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075);
+    --bs-offcanvas-transition: transform 0.3s ease-in-out;
+    --bs-offcanvas-title-line-height: 1.5;
+    }
+        
+    .offcanvas.offcanvas-top {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: var(--bs-offcanvas-height);
+    background-color:var(--bs-body-color) ;
+    max-height: 100%;
+    border-bottom: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateY(-100%);
+    }
+    .navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+   	background-color: transparent;
+   	transition: var(--bs-navbar-toggler-transition);
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+   padding-top: 10px ;
+   padding-bottom: 10px;
+    clear: both;
+    font-weight: 400;
+   	text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0px;
+    transform: translateY(-10px);
+	color: white;
+
+}
+.dropdown-item:hover {
+	color: skyblue;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url('image/navbar_buttons/hanburger.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.btn-close {
+    --bs-btn-close-color: black;
+    --bs-btn-close-bg: url("image/navbar_buttons/close.png");
+ 
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: var(--bs-btn-close-color);
+    background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+    border: 0;
+    border-radius: .375rem;
+    
+}
+   
+    .offcanvas-body {
+    flex-grow: 1;
+        padding-left: 58px;
+    overflow-y: auto;
+}
+    .nav-link {
+        font-family: "Outfit", serif; 
+        font-size: 15px;
+        color: white;
+        text-transform: capitalize;
+    }
+
+    .offcanvas-header .btn-close {
+    padding: calc(var(--bs-offcanvas-padding-y) * .5) calc(var(--bs-offcanvas-padding-x) * .5);
+    margin-top: -20px;
+    margin-right: calc(-.5 * var(--bs-offcanvas-padding-x));
+    margin-bottom: calc(-.5 * var(--bs-offcanvas-padding-y));
+    
+}
+.nav-link:focus, .nav-link:hover {
+	
+    color: skyblue;
+}
+
+.dropdown-menu.show {
+    
+   background-color: #1f3168;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow:none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Ensure it stays above other content */
+ 
+      }
+/* breadcrumb */
+.breadcrumb {
+    --bs-breadcrumb-padding-x: 0;
+    --bs-breadcrumb-padding-y: 0;
+    --bs-breadcrumb-margin-bottom: 1rem;
+    --bs-breadcrumb-bg: ;
+    --bs-breadcrumb-border-radius: ;
+    --bs-breadcrumb-divider-color: white;
+    --bs-breadcrumb-item-padding-x: 0.5rem;
+    --bs-breadcrumb-item-active-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+    margin-bottom: var(--bs-breadcrumb-margin-bottom);
+    font-size: var(--bs-breadcrumb-font-size);
+    list-style: none;
+	
+    background-color: var(--bs-breadcrumb-bg);
+    border-radius: var(--bs-breadcrumb-border-radius);
+}
+.breadcrumb a {
+	color: white;
+}
+
+	
+.navbar-bg {
+background-color: #213368e0;
+			
+    }
+::-webkit-scrollbar {
+  width: 5px;
+ 
+		
+}
+
+.navbar {
+  
+  --bs-navbar-padding-y: 0.1rem;
+}
+@media(max-width:1399px){
+	.navbar{
+		display: block;
+	}
+	.nav-item:not(:first-child){
+	border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+	}
+    .nav-link {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 19px 0;
+    }
+}
+
+		/* navbar end */
+       
+.gallery-section {
+    position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+.section-tb-padding {
+  padding: 190px 0px;
+}
+.gallery-breadcrumb-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-img-links{
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #DBA765;
+}
+.gallery-nav-blog{
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    border-bottom: 1px solid #e3e3e3 ;
+}
+.gallery-masonry-box{
+    padding: 60px 0px;
+    
+}
+.active-bar{
+    position: relative;
+}
+.active-bar::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 9px;
+    bottom: -1px;
+    width: 119px;
+    height: 3px;
+    background-color: #DBA765;
+}
+.hover-nav-link{
+    position: relative;
+    color: black;
+}
+.hover-nav-link:hover{
+    position: relative;
+    color: #DBA765;
+}
+.hover-nav-link::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 9px;
+    bottom: -1px;
+    width: 102px;
+    height: 3px;
+    background-color: #DBA765;
+    opacity: 0;
+}
+
+.hover-nav-link:hover::before{
+    opacity: 1;
+
+}
+
+.gallery{
+	display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 220px;
+	border: 1px solid red;
+	
+}
+.box{
+	background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #666;
+    background-blend-mode: inherit;
+    transition: all .3s ease-in-out;
+}
+.box:hover{
+	background-position: top;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+#col-2{
+   
+    grid-column: span 2;
+}
+.row-3{
+	grid-row: span 3;
+}
+#col-3{
+	grid-column: span 3;
+}
+@media(max-width:480px){
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+    #col-2{
+   
+        grid-column: span 3;
+    }
+	.gallery-nav-blog{
+		flex-direction: column;
+	}
+}
+.scrolled {
+      background-color: black !important; /* Darker background on scroll */
+    }
+    
+    /* Change link color when scrolled */
+    .scrolled .nav-link {
+      color: white !important; /* Light link color */
+    }
+	.store-footer .footer-area .footer-content ul.footer-ul li.footer-li.f-link {
+    width: calc(25% - 30px);
+}
+@media(min-width:1200px){
+	.store-footer .footer-area .footer-content ul.footer-ul li.footer-li.logo-info, .store-footer .footer-area .footer-content ul.footer-ul li.footer-li.store-info {
+    width: calc(25% - 30px);
+    
+}
+}
+@media(max-width:1200px){
+	.store-footer .footer-area .footer-content ul.footer-ul li.footer-li.logo-info, .store-footer .footer-area .footer-content ul.footer-ul li.footer-li.store-info {
+    width: calc(100% - 30px);
+    
+}
+
+.store-footer .footer-area .footer-content ul.footer-ul li.footer-li.f-link {
+    width: calc(100% - 30px);
+}
+}
+.privacy_details{
+    padding: 100px 0px;
+}
+.defination_list dd,dt{
+    margin-bottom: 30px;
+}
+.list_decor{
+    margin-top: 30px;
+    list-style-type: circle;
+}
+.list_decor li{
+    margin-bottom: 20px;
+}
+
+.footer_logos{
+	
+	
+	margin-bottom: 10px;
+	
+	
+}
+.foter_text{
+	font-size: 16px;
+	color: white;
+	font-family: Outfit,serif;
+}
+.siwj{
+	padding: 28px 0px;
+	position: relative;
+}
+
+.wijdwij {
+    position: absolute;
+    height: 228%;
+    left: 0;
+    left: -68px;
+    /* top: 50%; */
+    top: -89%;
+    width: 220px;
+    /* transform: translateY(-50%); */
+}
+.section-tb-paddingfooter{
+	padding: 100px 20px;
+}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-xxl navbar-bg">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <img src="image/hotel-2/logo-01.png" alt="" width="155"  class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler border border-0" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-top" id="offcanvasNavbar" tabindex="-1">
+                <div class="offcanvas-header">
+                    <div class="offcanvas-title">
+                        <h5><img src="image/hotel-2/logo-01.png" alt="" width="155"  class="d-inline-block align-text-top"></h5>
+                       
+                    </div>
+                    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="overview.html" target="_blank" class="nav-link">overview</a></li>
+                        <li class="nav-item dropdown"><a href="rooms.html" target="_blank" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">rooms & suits</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="rooms.html" target="_blank" class="dropdown-item">SUITE ROOM</a></li>
+                                    <li><a href="rooms.html" target="_blank" class="dropdown-item">DELUXE ROOM</a></li>
+                                    <li><a href="rooms.html" target="_blank" class="dropdown-item">SUPER DELUXE SUITE</a></li>
+                                    <!-- <li><a href="rooms.html" target="_blank" class="dropdown-item">PRESEDENTIAL SUITE</a></li> -->
+                                </ul>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link">Health & wellbeing</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">meeting & Events</a></li>
+                        <li class="nav-item"><a href="offers.html" target="_blank" class="nav-link">special offers</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">safety policies</a></li>
+                        <li class="nav-item"><a href="amenities.html" target="_blank" class="nav-link">amenities</a></li>
+                        <li class="nav-item"><a href="brands.html" target="_blank" class="nav-link">our brands</a></li>
+                        <li class="nav-item"><a href="#" target="_blank" class="nav-link">gallery</a></li>
+                        <li class="nav-item"><a href="contact-us.html" target="_blank" class="nav-link">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="gallery-section section-tb-padding" style="background-image: url('image/banner/roomsbaner.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="gallery-text-block">
+                        <div class="gallery-breadcrumb-links">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="index.html" target="_blank">Home</a></li>
+                                  <li class="breadcrumb-item"><a href="#">Privacy</a></li>
+                                </ol>
+                              </nav>
+                        </div>
+                        <div class="section-capture">
+                            <div class="section-title">
+                                <h2>
+                                    <span>Privacy Policies</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="privacy_details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div>
+                        <dl class="defination_list">
+                            <dt> <h5>Please read these binding legal terms carefully before using this site or making a reservation.</h5>
+                            </dt>
+                            <dd>By accessing, using, viewing, transmitting, caching or storing this site or any of its services, functions, materials, or contents, you shall be deemed to have agreed to each and all the terms, conditions, and notices in this site ("agreement") without modification. certain terms, including but not limited to the arbitration clause and class action waiver clause, may restrict your rights to bring a claim in a court of law. If you are not an Authorized User, and if you do not agree to the terms of this Agreement, you may not use this Site, including without limitation to make a reservation, or download any Materials from it. If you do not agree with these terms and conditions, please leave the Site immediately..
+
+                                The documents, data, information and other materials (collectively the "Material(s)") contained on the Web Site (the "Site") are provided by Six Continents Hotels, Inc. (“SCH”), a company within the InterContinental Hotels Group (collectively, “IHG® Hotels & Resorts” or “IHG”), exclusively for non-commercial, individual use by prospective and confirmed IHG guests and/or IHG® One Rewards Members to inquire about or make travel reservations and related services and for no other purpose (collectively, “Authorized Users”).
+
+                                SCH reserves the right to change the terms, conditions, and notices under which the Materials and the Site are offered at any time.  
+                            </dd>
+
+                            <dt>Agreement For Use</dt>
+                            <dd>You warrant that you are at least 18 years of age and possess the legal authority to enter into this agreement and to use this Site in accordance with all terms and conditions herein. You agree to be financially responsible for all of your use of this Site (as well as for use of your account by others, including without limitation minors living with you). You agree to supervise all usage by minors of this Site under your name or account. You also warrant that all information supplied by you or members of your household in using this Site is true and accurate and without limitation, or any false or fraudulent reservation. You agree that the reservations facilities of this Site shall be used only to make legitimate reservations or purchases for you or for another person for whom you are legally authorized to act. You understand that overuse or abuse of the reservation facilities of this Site may result in your being denied access to such facilities.
+                                For any reservations or other services for which fees may be charged, you agree to abide by the terms or conditions of purchase imposed, including, but not limited to, payment of all amounts when due and compliance with all rules and restrictions regarding availability of rates, products, or services. You shall be completely responsible for all charges, fees, duties, taxes, and assessments arising out of the use of this Site.
+
+
+                            </dd>
+                          
+                            <dt>Wireless Reservations</dt>
+                            <dd>Functionality is not guaranteed with all types of mobile devices in using this Site. You should contact your service provider directly for technical assistance or any questions. Please note that security features vary by carrier/service provider and mobile device. Additional minutes/charges may apply and may be charged by your mobile carrier/service provider.
+
+                            </dd>
+                            <dt>Currency Conversion</dt>
+                            <dd>
+                                Currency rates are based on publicly available sources and should be used as guidelines only. Room rates are guaranteed only in the hotel's local currency. Currency quotes are not updated every day. The currency information supplied by this Site is believed to be accurate, but SCH and/or its parent, subsidiaries and affiliates do not warrant or guarantee such accuracy.
+
+                            </dd>
+
+                            <dt>
+                                Limited License To View And Copy
+                            </dt>
+                            
+                            <dd>
+                                The content and information displayed on this Site (“IHG Materials”) is the property of SCH and/or other parties. The downloading, reproduction, or retransmission of IHG information, other than for non-commercial individual use, is strictly prohibited.
+                                This Site is to be used by Authorized Users for personal use only. Commercial uses of this Site are strictly prohibited. If you are currently an Authorized User, you are granted a limited, non-transferable, revocable license to view and copy the Materials solely for your personal use, subject to the restrictions below.
+                                
+                            </dd>
+                                <dt>
+                                    Prohibited Conduct
+                                </dt>
+                                <dd>
+                                    You agree not to: (a) copy, display, modify, reproduce, or otherwise transfer any of the Materials to any third party without the prior written permission of SCH; (b) interfere or disrupt networks connected to the Site; (c) use or attempt to use any device, software or routine which interferes with the proper functioning of the Site or any transactions being offered through the Site; (d) transmit files, data or other materials containing a computer virus, corrupted data, worms, “Trojan horses” or other instructions or design that would erase data or programming or cause the Site or any equipment or system to become inoperable or incapable of being used in the full manner for which it was designed; (e) deliver any communication to or through the Site which violates any local, state, federal or international law; (f) deliver any communication to or through the Site that contains defamatory, libelous, abusive or obscene material; or (g) deliver any communication to or through the Site that will infringe upon the rights of any third party.
+
+                                </dd>
+
+                                    <dt>
+                                        Intellectual Property Rights
+                                    </dt>
+                                    <dd>
+                                        This Site and the Materials contain and reference trademarks, patents, trade secrets, technologies, products, processes or other proprietary rights of IHG companies and/or other parties. No license or right to or in any such trademarks, patents, trade secrets, technologies, products, processes and other proprietary rights of IHG companies and/or other parties is granted to or conferred upon you. Reproduction or storage of materials obtained from this Site is subject to the U.S. Copyright Act of 1976, Title 17 U.S.C. No Materials may be reproduced, distributed, posted, displayed, uploaded, or transmitted except as expressly permitted herein. You may not remove any copyright, trademark notice or proprietary notices from the Materials; or use the Materials or this Site except as permitted in this Agreement. The use of any Materials from the Site on any other internet, intranet, web or other site or computer environment is prohibited. You may not utilize framing techniques to frame any IHG trademarks, logos, or other proprietary information (including images and text). You may not use any meta tags or any other "hidden text" utilizing our name, trademarks or other proprietary information
+
+                                    </dd>
+
+
+                                    <dt>
+                                        Copyright And Trademark Notices
+                                        </dt>
+                                        <dd>
+                                            All contents of this Site are the copyrighted property of one of the xxxx companies, or their subsidiaries, affiliates, or an IHG licensor, as applicable. All contents of this Site are protected by United States and international copyright laws.
+
+                                            xxxxx® Hotels & Resorts are trade names describing the subsidiary companies of xxxxx involved in the hotel business around the world. In the U.S. and Canada, Holiday Hospitality Franchising, LLC is the franchisor/licensor of most IHG brand names and marks. Trademarks owned by an IHG company may not be used or displayed publicly without the prior written permission of the owner of the marks, except for downloaded logos and photographs as provided for elsewhere on this Site. Any rights not expressly granted herein are reserved.
+                                            
+                                        </dd>
+
+                                        <dt>
+                                            Copyright Policy
+
+                                            </dt>
+                                            <dd>
+                                                Floric respects the copyright rights of others and has adopted and implemented a policy that provides for (a) the removal of content from this Site under appropriate circumstances, and (b) the suspension or termination of account holders or subscribers who repeatedly infringe the copyright rights of others. If you are a copyright owner and you believe your work has been copied in a way that constitutes copyright infringement, please contact IHG’s designated Copyright Agent, as hereafter defined, and provide the following information:
+                                                    <ul class="list_decor">
+                                                        <li>A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right of copyright that is allegedly infringed;
+                                                        </li> 
+                                                        <li>Identification of the copyrighted work claimed to have been infringed or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site;</li>  
+                                                        <li>Identification of the material that is claimed to be infringing or to be the subject of infringing activity, and information reasonably sufficient to permit us to locate the material;</li>
+                                                        <li>Information reasonably sufficient to permit us to contact the complaining party (for example, the complaining party’s physical address, email address, and telephone number);</li>
+                                                        <li>A statement that the complaining party has a good faith belief that use of the material is unauthorized; and,</li>
+                                                        <li>A statement that the information in the notification is accurate and, under penalty of perjury, that the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.</li>
+                                                    </ul>
+                                            </dd>
+                                            <dt>
+                                                Notifications of claimed infringement should be directed to the IHG Copyright Agent as follows:
+                                            </dt>
+                                            <dd>
+                                                Parties submitting content to the Site should be aware that IHG companies reserve the right to suspend or terminate their subscriptions or accounts in the event that IHG companies determine, in their sole discretion, that they have engaged in repeated acts of copyright infringement.
+
+                                            </dd>
+                                            <dt>
+                                                Ownership Of Materials
+                                                </dt>
+                                                <dd>
+                                                    The Materials are confidential and proprietary information of IHG companies or its licensors, as applicable.
+
+                                                </dd>
+
+                                                <dt>
+                                                    Linked Websites
+                                                    </dt>
+                                                    <dd>
+                                                        This Site includes links to other web sites. FLORIC provides such links solely as a convenience to you and for informational purposes only. FLORIC has not reviewed all of the information on these other web sites. The inclusion of these links in no way indicates SCH’s or other IHG companies’ endorsement, support or approval of the content, advertising, products, services, policies or other materials on or available from such web sites. Neither SCH, nor any other providers of products or services related to this Site, shall be responsible for the content of any other web sites and make no representation or warranty regarding any other web sites or the contents or materials on such web sites. If you decide to access other web sites, you do so at your own risk. Other web sites may include links to the Site. The inclusion of such links does not indicate the other web site’s endorsement, support or approval of the content, advertising, products, services, policies or other materials on or available from the Site.
+                                                    </dd>
+
+                                                    <dt>
+                                                        Privacy
+                                                    </dt>
+                                                    <dd>
+                                                        Your use of the Site is subject to the IHG Privacy Policy. If you would like to view the privacy practices please review our Privacy Statement.
+
+                                                    </dd>
+                                                    <dt>
+                                                        Security
+                                                    </dt>
+                                                    <dd>
+                                                        If you have been provided with a login and password, then any such login and password are for your personal use only. You may not reveal your login or password to anyone else or permit anyone else to use your login and password to access the Site. You are responsible for maintaining the confidentiality and security of your login and password and accept responsibility for all activities that occur under your account or password. You must notify IHG immediately in the event that the security of your login or password has been breached.
+                                                    </dd>
+                                                   <dt>
+                                                    Disclaimer
+                                                   </dt>
+                                                   <dd>
+                                                    <strong>
+                                                        THE MATERIALS ARE PROVIDED "AS IS" WITHOUT ANY WARRANTY, REPRESENTATION, CONDITION, UNDERTAKING OR TERM OF ANY KIND, EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT OF INTELLECTUAL PROPERTY, OR FITNESS FOR A PARTICULAR PURPOSE. BECAUSE SOME JURISDICTIONS PROHIBIT THE EXCLUSION OF IMPLIED WARRANTIES, THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.
+                                                    </strong>
+                                                    Further SCH does not warrant the accuracy or completeness of the information, text, graphics, links or other items contained within the Materials. SCH may make changes to the Materials, or the programmes, policies or other information described in the Materials, at any time without notice. SCH makes no commitment to update the Materials.
+                                                   </dd>
+                                                   <dt>
+                                                    Limitation Of Liability.
+                                                   </dt>
+                                                   <dd>
+                                                    <strong>IN NO EVENT SHALL AN IHG COMPANY BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER, INCLUDING LOSS OF PROFITS OR DATA, WHETHER IN AN ACTION IN CONTRACT OR TORT, ARISING OUT OF THE USE OR PERFORMANCE OF THE SITE, THESE TERMS OF USE, THE MATERIALS, THE AGREEMENT, OR THE PERFORMANCE OR NON-PERFORMANCE BY AN IHG COMPANY OR ANY THIRD PARTY PROVIDERS OF PRODUCTS OR SERVICES RELATED TO THIS SITE. THIS LIMITATION OF LIABILITY SHALL APPLY REGARDLESS OF WHETHER THE CLAIM ASSERTED IS BASED ON CONTRACT, NEGLIGENCE, OR ANY OTHER THEORY OF RECOVERY, EVEN IF IHG HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECAUSE SOME JURISDICTIONS PROHIBIT THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
+                                                    </strong>
+                                                   </dd>
+                                                   <dt>
+                                                    ELECTRONIC COMMUNICATIONS PRIVACY ACT NOTICE (18 U.S.C. 2701-2711): 
+                                                   </dt>
+                                                   <dd>
+                                                    <strong>
+                                                        WE MAKE NO GUARANTY OF CONFIDENTIALITY OR PRIVACY OF ANY COMMUNICATION OR INFORMATION TRANSMITTED ON THE SITE OR ANY WEB SITE LINKED TO THE SITE. WE WILL NOT BE LIABLE FOR THE PRIVACY OF THE INFORMATION, E-MAIL ADDRESSES, REGISTRATION AND IDENTIFICATION INFORMATION, DISK SPACE, COMMUNICATIONS, CONFIDENTIAL OR TRADE-SECRET INFORMATION, OR ANY OTHER CONTENT TRANSMITTED OVER NETWORKS ACCESSED BY THE SITE, OR OTHERWISE CONNECTED WITH YOUR USE OF THE SITE.
+                                                    </strong>
+                                                   </dd>
+                                                   <dt>
+                                                    Termination/Access Restriction
+                                                   </dt>
+                                                   <dd>
+                                                    SCH reserves the right, in its sole discretion, to modify your access or terminate your access to the Site and the Materials or any portion thereof at any time, without notice. <br>
+                                                    <strong>NOTICE</strong>. All notices and other communications permitted or required by the provisions of this Agreement may be given by electronic mail, conventional mail or, if by an IHG company, by posting such notice on this Site. Notice is deemed given upon receipt by you if sent by electronic mail or conventional mail, or immediately upon posting to this Site.
+                                                   </dd>
+
+                                                   <dt>
+                                                    Governing Law
+                                                   </dt>
+                                                   <dd>
+                                                    These Terms of Use shall be governed by, construed and enforced in accordance with the laws of the State of Georgia, United States, without regard to its conflicts of law rules. The exclusive jurisdiction for any dispute not covered by the terms of the Arbitration provision set forth in this Agreement or Materials may be filed only in the state or federal courts located in the State of Georgia, United States.
+
+                                                   </dd>
+                                                   <dt>
+                                                    Arbitration
+                                                   </dt>
+                                                   <dd>
+                                                    Except with respect to any claim or dispute involving the ownership, validity or use of any IHG trademarks or service marks, and to the extent permitted by applicable law, any dispute arising out of or related to the use or performance of this Site, these Terms of Use, the Materials, or the Agreement, seeking as relief money damages and/or attorneys’ fees or other damages (“Covered Claims”) will be submitted for arbitration to the American Arbitration Association (AAA). SCH shall have the right in a proper case to obtain temporary restraining orders, temporary or preliminary injunctive relief and/or declaratory relief (other than declarations with respect to the amount of money damages) from a court of competent jurisdiction.
+The arbitration proceedings shall be heard by one independent arbitrator who shall be an attorney or retired judge. The arbitration shall be held in accordance with the then-existing Commercial Arbitration Rules of the AAA. All matters within the scope of the Federal Arbitration Act (9 U.S.C. 1, et seq.) will be governed by it and not by any state arbitration law. You and SCH waive any rights to maintain other available resolution processes for such disputes, such as a court action or administrative proceeding, to settle disputes. You and SCH waive any right to a jury trial for such disputes. The rules in arbitration are different from the rules that apply in court. There is no judge or jury, and review is limited, but an arbitrator can award the same damages and relief, and must honour the same limitations stated in the Agreement, as a court would
+                                                    <br>
+                                                    In reaching his or her decision, the arbitrator shall follow this Agreement and Materials, shall be bound to apply the applicable law and shall not rule inconsistently with the applicable law. The arbitrator may not (1) without the consent of all parties, combine more than one individual’s claim or claims into a single case, (2) participate in or facilitate notification to others of potential claims, or (3) arbitrate or preside over any form of a class, mass, collective, or representative proceeding. The arbitrator shall include in his or her award any relief he or she deems proper in terms of money damages (with interest on unpaid amounts from the date due at the maximum rate allowed by law), and attorneys’ fees and costs. The award of the arbitrator shall be conclusive and binding upon all parties hereto and judgment upon the award may be entered in any court of competent jurisdiction.
+                                                    <br>
+                                                    If a party violates this arbitration agreement by commencing an action asserting a Covered Claim in a court of law, then the court (and not an arbitrator) shall have the authority to resolve any disputes about the interpretation, formation, existence, enforceability, validity, and scope of these Terms of Use, including the Agreement, this arbitration agreement, and the Waiver of Class, Mass, Collective, and Representative Claims. However, if a party complies with this arbitration agreement and files for arbitration without filing a complaint in a court of law, then the arbitrator shall have the authority to resolve any disputes about the interpretation of these Terms of Use for purposes of discovery or the merits of the underlying claim, but shall have no authority to resolve any disputes about the formation, existence, enforceability, or validity of the Terms of Use, including the Agreement, this arbitration agreement, and the Waiver of Class, Mass, Collective, and Representative Claims.
+
+
+                                                   </dd>
+                                                   <dt>
+                                                    Confidential
+                                                   </dt>
+                                                   <dd>
+                                                    Other than as may be required by law, the entire arbitration proceedings (including, but not limited to, any rulings, decisions or orders of the arbitrator), shall remain confidential and not be disclosed to anyone other than the parties to this agreement.
+                                                   </dd>
+                                                   <dt>
+                                                    Limitations Period
+                                                   </dt>
+                                                   <dd>
+                                                    Any and all Covered Claims shall be commenced within one (1) year from the occurrence of the facts giving rise to such claim or action, or such claim or action shall be barred. This Limitations Period section does not apply to residents of New Jersey, and is not applicable where local law prohibits it.
+
+                                                   </dd>
+                                                   <dt>
+                                                    Waiver Of Class, Mass, Collective, And Representative Claims
+                                                   </dt>
+                                                   <dd>
+                                                    To the extent permitted by law, you agree that you will not file a class action against an IHG company, participate in a class action against an IHG company, file or seek a class, mass, collective, or representative arbitration against an IHG company, or participate in such an arbitration against an IHG company, for any Covered Claims. To the extent permitted by law, you agree that all such claims may only be brought in your individual capacity, and not on behalf of other individuals.
+
+                                                   </dd>
+                                                   <dt>
+                                                    Miscellaneous Provisions
+                                                   </dt>
+                                                   <dd>
+                                                    This Agreement constitutes the entire agreement of the parties with respect to the subject matter hereof and supersedes all prior oral and written agreements. No failure or delay on the part of IHG in exercising any right or remedy hereunder or enforcing the terms and conditions of this Agreement will operate as a waiver thereof. If any part or provision of this Agreement is found to be invalid, unenforceable or void, then the remaining portion shall remain in full force and effect. If the Waiver of Class, Mass, Collective, and Representative Claims is found to be unenforceable, then any claim brought on a class, mass, collective, or representative action basis must be filed in a court of competent jurisdiction, and such court shall be the exclusive forum for such claims. Headings are for convenience only and not for use in interpretation of this Agreement.
+                                                   </dd>
+                          </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<footer class="store-footer">
+		<div class="footer-area section-tb-paddingfooter">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="footer-content">
+							<ul class="footer-ul">
+								<li class="footer-li logo-info">
+									<div class="footer_logos">
+										<div class="siwj">
+											<img src="image/hotel-2/logo-01.png" class="wijdwij" alt="">
+										</div>
+									</div>
+									<div class="foter_text">
+										The cites of the word in classical literat, 
+										discovered the undoubtable combined with acomes 
+										from sections
+									</div>
+								</li>
+								<li class="footer-li f-link">
+									<h4 class="footer-title">QUICK LINKS</h4>
+									<a href="#Information" class="footer-title mobile" data-bs-toggle="collapse">
+										<span class="title">QUICK LINKS</span>
+										<span class="icon"><i class="feather-plus"></i></span>
+									</a>
+									<ul class="collapse link-ul" id="Information">
+										<li class="link-li">
+											<a href="overview.html" class="link">Overview</a>
+										</li>
+										<li class="link-li">
+											<a href="rooms.html" class="link">Rooms & Suits</a>
+										</li>
+										<li class="link-li">
+											<a href="amenities.html" class="link">Amenities</a>
+										</li>
+										<li class="link-li">
+											<a href="policies.html" class="link">Safety Policies</a>
+										</li>
+										<li class="link-li">
+											<a href="javascript:void(0)" class="link">Terms & Condition</a>
+										</li>
+									</ul>
+								</li>
+								
+								<li class="footer-li f-link">
+									<h4 class="footer-title">Contact us</h4>
+									<a href="#contact-us" class="footer-title mobile" data-bs-toggle="collapse">
+										<span class="title">Contact us</span>
+										<span class="icon"><i class="feather-plus"></i></span>
+									</a>
+									<ul class="collapse link-ul" id="contact-us">
+										<li class="link-li">
+											<a href="tel:+123006500650" class="link">Phone Number</a>
+										</li>
+										<li class="link-li">
+											<a href="mailto:demokolly@gmail.com"
+												class="link">Email</a>
+										</li>
+										<li class="link-li">
+											<span class="link">Address</span>
+										</li>
+										<li class="link-li">
+											<span class="link">Adress</span>
+										</li>
+									</ul>
+								</li>
+								<li class="footer-li store-info">
+									<h4 class="footer-title">HOTEL OPEN</h4>
+									<a href="#store-open" class="footer-title mobile" data-bs-toggle="collapse">
+										<span class="title">HOTEL OPEN</span>
+										<span class="icon"><i class="feather-plus"></i></span>
+									</a>
+									<ul class="collapse link-ul" id="store-open">
+										<li class="link-li">
+											<span class="link label">Check In</span>
+											<span class="link text">8:30am to 6:30pm</span>
+										</li>
+										<li class="link-li">
+											<span class="link label">Check Out</span>
+											<span class="link text">8:30am to 4:30pm</span>
+										</li>
+										
+										<li class="link-li">
+											<span class="link label">Restaurant</span>
+											<span class="color-text">all days opened</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-area">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="copyright-text">
+							<p>Powered By Colourstreak India Private Limited</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<!-- hotel facility popup start -->
+	
+	<!-- hotel feature popup end -->
+	<!-- search model start -->
+	<div class="search modal fade" id="searchModel" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="search-box">
+									<form action="/search" method="get" class="search-bar">
+										<div class="form-search">
+											<input type="search" name="q" placeholder="Search here"
+												class="search-input">
+											<a href="javascript:void(0)" class="search-btn"><span><i
+														class="feather-search"></i></span></a>
+										</div>
+									</form>
+									<a href="javascript:void(0)" class="m-close" data-bs-dismiss="modal"><span
+											class="icon"><i class="feather-x"></i></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- search model end -->
+	<!-- bottom-menu start -->
+	<!-- <div class="bottom-menu">
+		<ul class="bottom-menu-ul">
+			<li class="bottom-menu-li">
+				<div class="bottom-menu-block">
+					<a href="index.html" target="_blank" class="bottom-menu-link">
+						<span class="icon"><i class="feather-home"></i></span>
+						<span class="title">Home</span>
+					</a>
+				</div>
+			</li>
+			<li class="bottom-menu-li">
+				<div class="bottom-menu-block">
+					<a href="membership.html" class="bottom-menu-link">
+						<span class="icon"><i class="feather-calendar"></i></span>
+						<span class="title">Booking</span>
+					</a>
+				</div>
+			</li>
+			<li class="bottom-menu-li">
+				<div class="bottom-menu-block">
+					<a href="javascript:void(0)" class="bottom-menu-link" data-bs-toggle="modal"
+						data-bs-target="#searchModel">
+						<span class="icon"><i class="feather-search"></i></span>
+						<span class="title">Search</span>
+					</a>
+				</div>
+			</li>
+			<li class="bottom-menu-li">
+				<div class="bottom-menu-block">
+					<a href="contact-us.html" class="bottom-menu-link">
+						<span class="icon"><i class="feather-map-pin"></i></span>
+						<span class="title">Location</span>
+					</a>
+				</div>
+			</li>
+			<li class="bottom-menu-li">
+				<div class="bottom-menu-block">
+					<a href="login.html" class="bottom-menu-link">
+						<span class="icon"><i class="feather-user"></i></span>
+						<span class="title">Login</span>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div> -->
+	
+	<!-- bottom-menu end -->
+	<!-- bg-scren start -->
+	<div class="bg-screen"></div>
+	<!-- bg-scren end -->
+	<!-- back-to-top start -->
+	<a href="javascript:void(0)" id="top" class="scroll show">
+		<span><i class="feather-arrow-up"></i></span>
+	</a>
+	<!-- back-to-top end -->
+	<!-- preloader start -->
+	<div class="preloader">
+		<div class="preloader-main">
+			<span style="--i:1;">L</span>
+			<span style="--i:2;">o</span>
+			<span style="--i:3;">a</span>
+			<span style="--i:4;">d</span>
+			<span style="--i:5;">i</span>
+			<span style="--i:6;">n</span>
+			<span style="--i:7;">g</span>
+			<span style="--i:8;">.</span>
+			<span style="--i:9;">.</span>
+			<span style="--i:10;">.</span>
+		</div>
+	</div>
+	<!-- preloader end -->
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- jquery js -->
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<!-- swiper-carousel js -->
+	<script src="js/swiper-bundle.min.js"></script>
+	<!-- owl-carousel js -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- slick js -->
+	<script src="js/slick.min.js"></script>
+	<!-- custom-selector js -->
+	<script src="js/custom-selector-2.js"></script>
+	<!-- magnific-popup js -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- datepicker js -->
+	<script src="js/datepicker.min.js"></script>
+	<!-- wow js -->
+	<script src="js/wow.min.js"></script>
+	<!-- custom js -->
+	<script src="js/theme.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	  <script>
+		// JavaScript to toggle class on scroll
+		window.addEventListener("scroll", function () {
+			const navbar = document.querySelector(".navbar");
+			if (window.scrollY > 50) { // Adjust scroll threshold as needed
+				navbar.classList.add("scrolled");
+			} else {
+				navbar.classList.remove("scrolled");
+			}
+		});
+	</script>
+
+<script>
+    // JavaScript to toggle sticky class on scroll
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 600) { // Adjust this value to the desired scroll point
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    });
+  </script>
+</body>
+
+</html>

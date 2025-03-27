@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="spacingtech_webify">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- title -->
+        <title>Tempa - The luxury hotel HTML5 template</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="image/favicon/favicon.png">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!-- fontawesome css -->
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">
+        <!-- feather css -->
+        <link rel="stylesheet" type="text/css" href="css/feather.css">
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+        <!-- owl-carousel css -->
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+        <!-- swiper css -->
+        <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+        <!-- slick css -->
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <!-- magnific-popup css -->
+        <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+        <!-- datepicker css -->
+        <link rel="stylesheet" type="text/css" href="css/datepicker.min.css">
+        <!-- theme css -->
+        <link rel="stylesheet" type="text/css" href="css/main-1.css">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="css/style-1.css">
+
+		<style>
+			.desc{
+	color: #808080;
+}
+p{
+	color: #eaeaea;	}
+			/* navbar */
+
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+		.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-zindex: 1045;
+    --bs-offcanvas-width: 400px;
+    --bs-offcanvas-height: 100vh;
+    --bs-body-color: #213368;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1rem;
+    --bs-offcanvas-color: var(--bs-body-color);
+    --bs-offcanvas-bg: var(--bs-body-bg);
+    --bs-offcanvas-border-width: var(--bs-border-width);
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075);
+    --bs-offcanvas-transition: transform 0.3s ease-in-out;
+    --bs-offcanvas-title-line-height: 1.5;
+    }
+        
+    .offcanvas.offcanvas-top {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: var(--bs-offcanvas-height);
+    background-color:var(--bs-body-color) ;
+    max-height: 100%;
+    border-bottom: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateY(-100%);
+    }
+    .navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+   	background-color: transparent;
+   	transition: var(--bs-navbar-toggler-transition);
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+   padding-top: 10px ;
+   padding-bottom: 10px;
+    clear: both;
+    font-weight: 400;
+   	text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0px;
+    transform: translateY(-10px);
+	color: white;
+
+}
+.dropdown-item:hover {
+	color: skyblue;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url('image/navbar_buttons/hanburger.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.btn-close {
+    --bs-btn-close-color: black;
+    --bs-btn-close-bg: url("image/navbar_buttons/close.png");
+ 
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: var(--bs-btn-close-color);
+    background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+    border: 0;
+    border-radius: .375rem;
+    
+}
+   
+    .offcanvas-body {
+    flex-grow: 1;
+        padding-left: 58px;
+    overflow-y: auto;
+}
+    .nav-link {
+        font-family: "Outfit", serif; 
+        font-size: 15px;
+        color: white;
+        text-transform: capitalize;
+    }
+
+    .offcanvas-header .btn-close {
+    padding: calc(var(--bs-offcanvas-padding-y) * .5) calc(var(--bs-offcanvas-padding-x) * .5);
+    margin-top: -20px;
+    margin-right: calc(-.5 * var(--bs-offcanvas-padding-x));
+    margin-bottom: calc(-.5 * var(--bs-offcanvas-padding-y));
+    
+}
+.nav-link:focus, .nav-link:hover {
+	
+    color: skyblue;
+}
+
+.dropdown-menu.show {
+    
+   background-color: #1f3168;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow:none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Ensure it stays above other content */
+ 
+      }
+/* breadcrumb */
+.breadcrumb {
+    --bs-breadcrumb-padding-x: 0;
+    --bs-breadcrumb-padding-y: 0;
+    --bs-breadcrumb-margin-bottom: 1rem;
+    --bs-breadcrumb-bg: ;
+    --bs-breadcrumb-border-radius: ;
+    --bs-breadcrumb-divider-color: white;
+    --bs-breadcrumb-item-padding-x: 0.5rem;
+    --bs-breadcrumb-item-active-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+    margin-bottom: var(--bs-breadcrumb-margin-bottom);
+    font-size: var(--bs-breadcrumb-font-size);
+    list-style: none;
+	
+    background-color: var(--bs-breadcrumb-bg);
+    border-radius: var(--bs-breadcrumb-border-radius);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+ 
+		
+}
+
+.navbar {
+  
+  --bs-navbar-padding-y: 0.1rem;
+}
+.navbar-bg {
+			background-color: #213368e0;
+			
+    }
+@media(max-width:1399px){
+	.navbar{
+		display: block;
+	}
+	.nav-item:not(:first-child){
+	border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+	}
+    .nav-link {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 19px 0;
+    }
+
+
+}
+.breadcrumb a {
+	color: white;
+}
+	
+	
+.gallery-section {
+    position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+.section-tb-padding {
+ padding: 190px 0px;
+}
+.room-categories{
+	padding: 50px 0px;
+}
+.custom_footer{
+	padding: 100px 20px;
+	
+	background-color: #32508c;
+}
+.user_box{
+max-width: 500px;
+width: 100%;
+border: 1px solid white;
+margin-bottom: 30px;
+	
+}
+.myform{
+	position: relative;
+	width: 100%;
+	
+}
+.user_content{
+	width: 100%;
+	background-color: #ffffff;
+	padding: 16px 20px;
+	color: black;
+}
+.subscribesbtn{
+	position: absolute;
+	height: 100%;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	padding: 16px 18px;
+	background-color: #213368;
+}
+@media(max-width:480px){
+	.subscribesbtn{
+		position: unset;
+		margin-top: 40px;
+		height: 50%;
+		justify-content: center;
+		
+	}
+	.user_box{
+		border: none;
+	}
+}
+.footer_logos{
+	
+	
+	margin-bottom: 10px;
+	
+	
+}
+.siwj{
+	padding: 28px 0px;
+	position: relative;
+}
+
+.wijdwij {
+    position: absolute;
+    height: 228%;
+    left: 0;
+    left: -68px;
+    /* top: 50%; */
+    top: -89%;
+    width: 220px;
+    /* transform: translateY(-50%); */
+}
+
+
+.foter_text{
+	font-size: 16px;
+	color: white;
+	font-family: Outfit,serif;
+}
+.footer-title{
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.custspace{
+	margin-bottom: 10px;
+	display: flex;
+	gap: 10px;
+}
+.company_name{
+	display: flex;
+	justify-content: center;
+	color: white;
+
+}
+.company_name p {
+	color: white;
+}
+.company_name{
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	font-family: Outfit, sans-serif;
+	background-color: #213368;
+}
+.last_section{
+	padding: 20px 0px;
+	background-color: #213368;
+}
+.logo_maker{
+	display: flex;
+	border: 1px solid green;
+}
+.move{
+	border: 1px solid red;
+	
+}
+.fintouch{
+	width: 50px;	
+}
+.service-title{
+	color: black;
+}
+.price,.label{
+	color: black;
+}
+.details-area .info-block .details-info .info-content{
+	border: none;
+}
+.details-area .info-block .details-feature .feature-block{
+	background-color: #3c4c7a;
+}
+</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-xxl navbar-bg">
+			<div class="container">
+				<a href="" class="navbar-brand">
+					<img src="image/hotel-2/logo-01.png" alt="" width="155"  class="d-inline-block align-text-top">
+				</a>
+				<button class="navbar-toggler border border-0" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+						<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-top" id="offcanvasNavbar" tabindex="-1">
+					<div class="offcanvas-header">
+						<div class="offcanvas-title">
+							<h5><img src="image/hotel-2/logo-01.png" alt="" width="155"  class="d-inline-block align-text-top"></h5>
+						   
+						</div>
+						<button class="btn-close" data-bs-dismiss="offcanvas"></button>
+					</div>
+					
+					<div class="offcanvas-body">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="overview.html" class="nav-link">overview</a></li>
+							<li class="nav-item dropdown"><a href="rooms.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">rooms & suits</a>
+									<ul class="dropdown-menu">
+										<li><a href="rooms.html" class="dropdown-item">SUITE ROOM</a></li>
+										<li><a href="rooms.html" class="dropdown-item">DELUXE ROOM</a></li>
+										<li><a href="rooms.html" class="dropdown-item">SUPER DELUXE SUITE</a></li>
+										<!-- <li><a href="rooms.html" class="dropdown-item">PRESEDENTIAL SUITE</a></li> -->
+									</ul>
+							</li>
+							<li class="nav-item"><a href="" class="nav-link">Health & wellbeing</a></li>
+							<li class="nav-item"><a href="" class="nav-link">meeting & Events</a></li>
+							<li class="nav-item"><a href="offers.html" target="_blank" class="nav-link">special offers</a></li>
+							<li class="nav-item"><a href="" class="nav-link">Safety Policies</a></li>
+							<li class="nav-item"><a href="amenities.html" target="_blank" class="nav-link">amenities</a></li>
+							<li class="nav-item"><a href="brands.html" target="_blank" class="nav-link">our brands</a></li>
+							<li class="nav-item"><a href="floricgallery.html" target="_blank" class="nav-link">gallery</a></li>
+							<li class="nav-item"><a href="contact-us.html" target="_blank" class="nav-link">contact us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="gallery-section section-tb-padding" style="background-image: url('image/banner/roomsbaner3.jpg');">	
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="gallery-text-block">
+							<div class="gallery-breadcrumb-links">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb d-flex justify-content-center">
+									  <li class="breadcrumb-item"><a href="index.html" target="_blank">Home</a></li>
+									  <li class="breadcrumb-item"><a href="#">Room</a></li>
+									</ol>
+								  </nav>
+							</div>
+							<div class="section-capture">
+								<div class="section-title">
+									<h2 style="color: white;">
+										<span>Super Deluxe Room</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- top notification start -->
+		<!-- <section class="top-notification">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<div class="notification-main">
+							<ul class="notification-ul"> 
+								<li class="notification-li contact">
+									<div class="contact-block">
+										<div class="info-block">
+											<p class="label">Email :</p>
+											<a href="mailto:hotel78@gmail.com" class="link"> hotel78@gmail.com</a>
+										</div>
+										<div class="info-block">
+											<a href="pricing.html" class="link">Reservation</a>
+										</div>
+									</div>
+								</li>
+								<li class="notification-li offer-text">
+									<div class="text-block">
+										<p class="text">Enjoy specials packages and resort offers</p>
+									</div>
+								</li>
+								<li class="notification-li right-bar">
+									<ul class="right-bar-ul">
+										<li class="right-bar-li right-bar-link1 link-xs">
+											<a href="pricing.html"><span class="title">Reservation</span></a>
+										</li>
+										<li class="right-bar-li right-bar-link2">
+											<a href="room-grid.html"><span class="title">Hotel book</span></a>
+										</li>
+										<li class="right-bar-li right-bar-link3">
+											<a href="promotions.html"><span class="title">Holiday sale</span></a>
+										</li>
+										<li class="right-bar-li right-bar-link3">
+											<a href="login.html"><span class="title">Login</span></a>
+											<a href="create-account.html"><span class="title">Register</span></a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- top notification end -->
+		<!-- header start -->
+		<!-- <header class="store-header" id="header">
+			<div class="header-area">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col">
+							<div class="header-block">
+								<div class="header-wrap logo">
+									<div class="logo-area">
+										<a href="index.html" class="logo"><img src="image/logo.png" class="img-fluid" alt="logo"></a>
+									</div>
+								</div>
+								<div class="header-wrap menu">
+									<div class="main-menu">
+										<ul class="menu-ul">                      
+											<li class="menu-li">
+												<a href="javascript:void(0)" class="menu-link">
+													<span class="title">Home</span>
+													<span class="icon"><i class="feather-chevron-down"></i></span>
+												</a>
+												<ul class="menu-drop-ul collapse">
+													<li class="menu-drop-li">
+														<a href="javascript:void(0)" class="menu-drop-link">
+															<span class="title">The tempa 1</span>
+															<span class="icon"><i class="feather-chevron-right"></i></span>
+														</a>
+														<ul class="side-menu-ul collapse">
+															<li class="side-menu-li">
+																<a href="index.html" class="side-menu-link">The tempa 1 ltr</a>
+															</li>
+															<li class="side-menu-li">
+																<a href="../hotel-rtl/index.html" class="side-menu-link">The tempa 1 rtl</a>
+															</li>
+															<li class="side-menu-li">
+																<a href="../hotel-box/index.html" class="side-menu-link">The tempa 1 box</a>
+															</li>
+														</ul>
+													</li>
+													<li class="menu-drop-li">
+														<a href="javascript:void(0)" class="menu-drop-link">
+															<span class="title">The tempa 2</span>
+															<span class="icon"><i class="feather-chevron-right"></i></span>
+														</a>
+														<ul class="side-menu-ul collapse">
+															<li class="side-menu-li">
+																<a href="index-2.html" class="side-menu-link">The tempa 2 ltr</a>
+															</li>
+															<li class="side-menu-li">
+																<a href="../hotel-rtl/index-2.html" class="side-menu-link">The tempa 2 rtl</a>
+															</li>
+															<li class="side-menu-li">
+																<a href="../hotel-box/index-2.html" class="side-menu-link">The tempa 2 box</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="menu-li">
+												<a href="facilities.html" class="menu-link"><span class="title">Facilities</span></a>
+											</li>
+											<li class="menu-li">
+												<a href="javascript:void(0)" class="menu-link">
+													<span class="title">Rooms</span>
+													<span class="icon"><i class="feather-chevron-down"></i></span>
+												</a>
+												<ul class="menu-drop-ul collapse">
+													<li class="menu-drop-li">
+														<a href="room-grid.html" class="menu-drop-link">Room grid</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="room-list.html" class="menu-drop-link">Room list</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="room-detail.html" class="menu-drop-link">Room detail</a>
+													</li>
+												</ul>
+											</li>
+											<li class="menu-li">
+												<a href="restaurant.html" class="menu-link"><span class="title">Restaurant</span></a>
+											</li>
+											<li class="menu-li">
+												<a href="contact-us.html" class="menu-link"><span class="title">Contact us</span></a>
+											</li>
+											<li class="menu-li">
+												<a href="javascript:void(0)" class="menu-link">
+													<span class="title">Pages</span>
+													<span class="icon"><i class="feather-chevron-down"></i></span>
+												</a>
+												<ul class="menu-drop-ul collapse">
+													<li class="menu-drop-li">
+														<a href="about.html" class="menu-drop-link">About us</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="membership.html" class="menu-drop-link">Membership</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="gallery.html" class="menu-drop-link">Gallery</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="pricing.html" class="menu-drop-link">Pricing</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="blog.html" class="menu-drop-link">Blog</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="blog-details.html" class="menu-drop-link">Blog details</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="promotions.html" class="menu-drop-link">Promotions</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="service.html" class="menu-drop-link">Service</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="video.html" class="menu-drop-link">Hotel video</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="404.html" class="menu-drop-link">404 page</a>
+													</li>
+													<li class="menu-drop-li">
+														<a href="comming-soon.html" class="menu-drop-link">Comming soon</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="header-wrap right-block">
+									<ul class="right-block-ul">
+										<li class="right-block-li toggle-menu">
+											<a href="javascript:void(0)" class="right-block-link toggler-btn">
+												<div class="icon-block">
+													<span class="icon"><i class="feather-align-right"></i></span>
+												</div>
+											</a>
+										</li>
+										<li class="right-block-li search">
+											<a href="javascript:void(0)" class="right-block-link" data-bs-toggle="modal" data-bs-target="#searchModel">
+												<div class="icon-block">
+													<span class="icon"><i class="feather-search"></i></span>
+												</div>
+												<div class="text-block">
+													<p class="mini-title">Search</p>
+													<span class="main-title">Find our search</span>
+												</div>
+											</a>
+										</li>
+										<li class="right-block-li phone">
+											<a href="tel:(+254)0123456789" class="right-block-link">
+												<div class="icon-block">
+													<span class="icon"><i class="feather-phone-call"></i></span>
+												</div>
+												<div class="text-block">
+													<p class="mini-title">Phone number</p>
+													<span class="main-title">(+254) 0123 456 789</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header> -->
+		<!-- header end -->
+		<!-- breadcrumb start -->
+		<!-- <section class="breadcrumb-area section-tb-padding" style="background-image: url('image/breadcrumb.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumb-block">
+							<div class="breadcrumb-link">
+								<a href="index.html" class="link">Home</a>
+								<span class="page-title">Roomdetails</span>
+							</div>
+							<div class="section-capture">
+								<div class="section-title">
+									<h2>
+										<span>Room details</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- breadcrumb end -->
+		<!-- store content start -->
+		<main id="demo-content">
+			<!-- details start -->
+			<section class="details-area room-categories">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<!-- <div class="details-image">
+								<div class="swiper" id="details-slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="details-image">
+												<a href="javascript:void(0)" class="image small-opacity">
+													<img src="image/room-details/room-details-1.jpg" class="img-fluid" alt="image">
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="details-image">
+												<a href="javascript:void(0)" class="image small-opacity">
+													<img src="image/room-details/room-details-2.jpg" class="img-fluid" alt="image">
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="details-image">
+												<a href="javascript:void(0)" class="image small-opacity">
+													<img src="image/room-details/room-details-3.jpg" class="img-fluid" alt="image">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							<div class="info-block">
+								<div class="details-info">
+									<div class="info-content">
+										<!-- <div class="title-review">
+											<h4 class="title">Classic superior room</h4>
+											<span class="review">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+										</div> -->
+										<div class="description">
+											<p class="desc">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique laboriosam natus tempore aperiam modi eligendi. Beatae rerum nihil quo dignissimos. Quidem praesentium fuga error suscipit incidunt sit voluptate officia odit vitae. Perspiciatis praesentium quos qui facere unde?
+											</p>
+										</div>
+										<!-- <ul class="details-tag-ul">
+											<li class="details-tag-li">
+												<a href="javascript:void(0)" class="tag-link">50m<sub>2</sub></a>
+											</li>
+											<li class="details-tag-li">
+												<a href="javascript:void(0)" class="tag-link">2 Beds</a>
+											</li>
+											<li class="details-tag-li">
+												<a href="javascript:void(0)" class="tag-link">1 Bathroom</a>
+											</li>
+											<li class="details-tag-li">
+												<a href="javascript:void(0)" class="tag-link">Balcony</a>
+											</li>
+										</ul> -->
+										<h4 class="details-price">
+											<span class="price">Rs. 6999 + Taxes </span>
+											<span class="label">/ night</span>
+										</h4>
+									</div>
+									<div class="details-service">
+										<h4 class="service-title">Room facilities</h4>
+										<div class="service-block">
+											<ul class="service-ul">
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-1.png" class="img-fluid" alt="image"></a>
+														<span class="title">Balcony or terrace</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-2.png" class="img-fluid" alt="image"></a>
+														<span class="title">Breakfast included</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-3.png" class="img-fluid" alt="image"></a>
+														<span class="title">Flat screen TV</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-4.png" class="img-fluid" alt="image"></a>
+														<span class="title">Hairdryer</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-5.png" class="img-fluid" alt="image"></a>
+														<span class="title">Ironing board</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-6.png" class="img-fluid" alt="image"></a>
+														<span class="title">Kettle tea</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-7.png" class="img-fluid" alt="image"></a>
+														<span class="title">Saving safe</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-8.png" class="img-fluid" alt="image"></a>
+														<span class="title">Shower bathtub</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-9.png" class="img-fluid" alt="image"></a>
+														<span class="title">Telephone</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-10.png" class="img-fluid" alt="image"></a>
+														<span class="title">Towel warmer</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-11.png" class="img-fluid" alt="image"></a>
+														<span class="title">Wi - fi access</span>
+													</div>
+												</li>
+												<li class="service-li">
+													<div class="service-icon">
+														<a href="javascript:void(0)" class="service-icon"><img src="image/room-details/details-service-12.png" class="img-fluid" alt="image"></a>
+														<span class="title">Writing desk</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="service-btn">
+											<a href="javascript:void(0)" class="btn-style">Check now</a>
+										</div>
+									</div>
+								</div>
+								<div class="details-feature">
+									<div class="feature-block">
+										<h4 class="feature-title">Hours</h4>
+										<div class="content-text">
+											<ul class="feature-ul">
+												<li class="feature-li">
+													<div class="icon-block">
+														<span class="icon"><i class="feather-clock"></i></span>
+													</div>
+													<div class="text-block">
+														<div class="label">
+															<p>Breakfast: </p>
+														</div>
+														<div class="input-text">
+															<p> 7.00 am – 11.00 am (daily)</p>
+														</div>
+													</div>
+												</li>
+												<li class="feature-li">
+													<div class="icon-block">
+														<span class="icon"><i class="feather-clock"></i></span>
+													</div>
+													<div class="text-block">
+														<div class="label">
+															<p>Lunch: </p>
+														</div>
+														<div class="input-text">
+															<p> 12.00 noon – 2.00 pm (daily)</p>
+														</div>
+													</div>
+												</li>
+												<li class="feature-li">
+													<div class="icon-block">
+														<span class="icon"><i class="feather-clock"></i></span>
+													</div>
+													<div class="text-block">
+														<div class="label">
+															<p>Dinner: </p>
+														</div>
+														<div class="input-text">
+															<p> open from 6.30 pm,</p>
+															<p>last order at 10.00 pm (daily)</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- <div class="feature-block">
+										<h4 class="feature-title">Dress code</h4>
+										<div class="content-text">
+											<p>Smart casual (no shorts & sandals permitted)</p>
+										</div>
+									</div> -->
+									<!-- <div class="feature-block">
+										<h4 class="feature-title">Terrace</h4>
+										<div class="content-text">
+											<p>Open for drinks only</p>
+										</div>
+									</div> -->
+									<div class="feature-block">
+										<h4 class="feature-title">Room rules</h4>
+										<div class="content-text">
+											<p>Checkin: after 2:00 PM</p>
+											<p>Check-out: 11:00 AM</p>
+											<p>Self-check-in with lockbox</p>
+											<p>No smoking</p>
+											<p>Pets are allowed</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="custom_footer">
+				<div class="container">
+					<!-- <div class="row">
+						<div class="col-lg-12">
+							<div class="user_box">
+								<form action="" class="myform">
+									<input type="text" name="" id="" class="user_content" placeholder="Enter Your Email address">
+									<a href="" class="subscribesbtn">SUBSCRIBE</a>
+								</form>
+							</div>
+						</div>
+	
+					</div> -->
+					<div class="row">
+						<div class="col-lg-3 mb-3">
+							<div class="footer_logos">
+								<div class="siwj">
+									<img src="image/hotel-2/logo-01.png" class="wijdwij" alt="">
+								</div>
+							</div>
+							<div class="foter_text">
+								The cites of the word in classical literat, 
+								discovered the undoubtable combined with acomes 
+								from sections
+							</div>
+						</div>
+						<div class="col-lg-3  mb-3">
+							<h6 class="footer-title">QUICK LINKS</h4>
+							<a href="#collapseLinks" class="footer-title d-md-none" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseLinks">
+							  <span class="title" style="color: white;">QUICK LINKS</span>
+							  <span class="icon"><i class="feather-plus"></i></span>
+							</a>
+							<ul class="collapse d-md-block" id="collapseLinks">
+							  <li><a href="overview.html" class="text-white text-decoration-none custspace" target="_blank">Overview</a></li>
+							  <li ><a href="rooms.html" class="text-white text-decoration-none custspace" target="_blank">Rooms & Suits</a></li>
+							  <li><a href="amenities.html" class="text-white text-decoration-none custspace" target="_blank">Amenities</a></li>
+							  <li><a href="policies.html" class="text-white text-decoration-none custspace" target="_blank">Privacy Policies</a></li>
+							  <li><a href="#" class="text-white text-decoration-none custspace" target="_blank">Terms & Conditions</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3  mb-3">
+							<h6 class="footer-title">CONTACTS</h4>
+							<a href="#collapseContact" class="footer-title d-md-none" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseContact">
+							  <span class="title" style="color: white;">CONTACTS</span>
+							  <span class="icon"><i class="feather-plus"></i></span>
+							</a>
+							<ul class="collapse d-md-block" id="collapseContact">
+							  <li><a href="#" class="text-white text-decoration-none custspace" target="_blank">Phone Number</a></li>
+							  <li ><a href="#" class="text-white text-decoration-none custspace" target="_blank">Email
+								</a></li>
+							  <li><a href="#" class="text-white text-decoration-none custspace" target="_blank">Address<br>
+								Address</a></li>
+							 
+							</ul>
+						</div>
+						<div class="col-lg-3  mb-3">
+							<h6 class="footer-title">HOTEL OPEN</h4>
+							<a href="#collapseTime" class="footer-title d-md-none" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseTime">
+							  <span class="title" style="color: white;">HOTEL OPEN</span>
+							  <span class="icon"><i class="feather-plus"></i></span>
+							</a>
+							<ul class="collapse d-md-block" id="collapseTime">
+							  <li><a href="#" class="text-white text-decoration-none custspace" target="_blank"><span>Check &nbsp; In</span><span> 8:30am to 6:30pm</span></a></li>
+							  <li ><a href="#" class="text-white text-decoration-none custspace" target="_blank"><span>Check Out</span><span> 8:30am to 4:30pm</span></a></li>
+							  <li><a href="#" class="text-white text-decoration-none custspace" target="_blank">Restaurant : All days opened
+								</a></li>
+							 
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				
+			</section>
+			<section class="last_section">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="company_name">
+							<p>Powered By Colourstreak India Private Limited</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+        <div class="preloader">
+        	<div class="preloader-main">
+		        <span style="--i:1;">L</span>
+		        <span style="--i:2;">o</span>
+		        <span style="--i:3;">a</span>
+		        <span style="--i:4;">d</span>
+		        <span style="--i:5;">i</span>
+		        <span style="--i:6;">n</span>
+		        <span style="--i:7;">g</span>
+		        <span style="--i:8;">.</span>
+		        <span style="--i:9;">.</span>
+		        <span style="--i:10;">.</span>
+	        </div>
+	    </div>
+        <!-- preloader end -->
+		<!-- bootstrap js -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- jquery js -->
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <!-- swiper-carousel js -->
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- owl-carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- slick js -->
+        <script src="js/slick.min.js"></script>
+        <!-- custom-selector js -->
+        <script src="js/custom-selector-1.js"></script>
+        <!-- magnific-popup js -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!-- datepicker js -->
+        <script src="js/datepicker.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- custom js -->
+        <script src="js/theme.js"></script>	
+	</body>
+</html>
