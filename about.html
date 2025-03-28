@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- title -->
-        <title>Floric hotel</title>
+        <title>Floric Hotel</title>
         <!-- favicon -->
         <link rel="icon" type="image/x-icon" href="image/favicon/favicon.png">
         <!-- bootstrap css -->
@@ -32,253 +32,535 @@
         <!-- style css -->
         <link rel="stylesheet" type="text/css" href="css/style-1.css">
 		<link rel="stylesheet" type="text/css" href="css/style-2.css">
+
+		<style>
+			
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body,
+		html {
+			overflow-x: hidden;
+		}
+	/* width */
+
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+} */
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eec6a2; 
+  border-radius: 10px;
+  
+ 
+
+  
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+} */
+		/* navbar */
+
+		.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-zindex: 1045;
+    --bs-offcanvas-width: 400px;
+    --bs-offcanvas-height: 100vh;
+    --bs-body-color: #213368;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1rem;
+    --bs-offcanvas-color: var(--bs-body-color);
+    --bs-offcanvas-bg: var(--bs-body-bg);
+    --bs-offcanvas-border-width: var(--bs-border-width);
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075);
+    --bs-offcanvas-transition: transform 0.3s ease-in-out;
+    --bs-offcanvas-title-line-height: 1.5;
+    }
+        
+    .offcanvas.offcanvas-top {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: var(--bs-offcanvas-height);
+    background-color:var(--bs-body-color) ;
+    max-height: 100%;
+    border-bottom: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateY(-100%);
+    }
+    .navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+   	background-color: transparent;
+   	transition: var(--bs-navbar-toggler-transition);
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+   padding-top: 10px ;
+   padding-bottom: 10px;
+    clear: both;
+    font-weight: 400;
+   	text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0px;
+    transform: translateY(-10px);
+	color: white;
+
+}
+.dropdown-item:hover {
+	color: skyblue;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url('image/navbar_buttons/hanburger.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.btn-close {
+    --bs-btn-close-color: black;
+    --bs-btn-close-bg: url("image/navbar_buttons/close.png");
+ 
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: var(--bs-btn-close-color);
+    background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+    border: 0;
+    border-radius: .375rem;
+    
+}
+   
+    .offcanvas-body {
+    flex-grow: 1;
+        padding-left: 58px;
+    overflow-y: auto;
+}
+    .nav-link {
+        font-family: "Outfit", serif; 
+        font-size: 15px;
+        color: white;
+        text-transform: capitalize;
+    }
+
+    .offcanvas-header .btn-close {
+    padding: calc(var(--bs-offcanvas-padding-y) * .5) calc(var(--bs-offcanvas-padding-x) * .5);
+    margin-top: -20px;
+    margin-right: calc(-.5 * var(--bs-offcanvas-padding-x));
+    margin-bottom: calc(-.5 * var(--bs-offcanvas-padding-y));
+    
+}
+.nav-link:focus, .nav-link:hover {
+	
+    color: skyblue;
+}
+
+.dropdown-menu.show {
+    
+   background-color: #1f3168;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow:none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Ensure it stays above other content */
+ 
+      }
+/* breadcrumb */
+.breadcrumb {
+    --bs-breadcrumb-padding-x: 0;
+    --bs-breadcrumb-padding-y: 0;
+    --bs-breadcrumb-margin-bottom: 1rem;
+    --bs-breadcrumb-bg: ;
+    --bs-breadcrumb-border-radius: ;
+    --bs-breadcrumb-divider-color: white;
+    --bs-breadcrumb-item-padding-x: 0.5rem;
+    --bs-breadcrumb-item-active-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+    margin-bottom: var(--bs-breadcrumb-margin-bottom);
+    font-size: var(--bs-breadcrumb-font-size);
+    list-style: none;
+	
+    background-color: var(--bs-breadcrumb-bg);
+    border-radius: var(--bs-breadcrumb-border-radius);
+}
+.breadcrumb a {
+	color: white;
+}
+
+	
+.navbar-bg {
+background-color: #213368e0;
+			
+    }
+::-webkit-scrollbar {
+  width: 5px;
+ 
+		
+}
+
+.navbar {
+  
+  --bs-navbar-padding-y: 0.1rem;
+}
+@media(max-width:1399px){
+	.navbar{
+		display: block;
+	}
+	.nav-item:not(:first-child){
+	border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+	}
+    .nav-link {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 19px 0;
+    }
+}
+
+		/* navbar end */
+       
+.gallery-section {
+    position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+.section-tb-padding {
+  padding: 190px 0px;
+}
+.gallery-breadcrumb-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-img-links{
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #DBA765;
+}
+.gallery-nav-blog{
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    border-bottom: 1px solid #e3e3e3 ;
+}
+.gallery-masonry-box{
+    padding: 60px 0px;
+    
+}
+.active-bar{
+    position: relative;
+}
+.active-bar::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 9px;
+    bottom: -1px;
+    width: 119px;
+    height: 3px;
+    background-color: #DBA765;
+}
+.hover-nav-link{
+    position: relative;
+    color: black;
+}
+.hover-nav-link:hover{
+    position: relative;
+    color: #DBA765;
+}
+.hover-nav-link::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 9px;
+    bottom: -1px;
+    width: 102px;
+    height: 3px;
+    background-color: #DBA765;
+    opacity: 0;
+}
+
+.hover-nav-link:hover::before{
+    opacity: 1;
+
+}
+
+.gallery{
+	display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 220px;
+	
+	
+}
+.box{
+	background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #666;
+    background-blend-mode: inherit;
+    transition: all .3s ease-in-out;
+}
+.box:hover{
+	background-position: top;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+#col-2{
+   
+    grid-column: span 2;
+}
+.row-3{
+	grid-row: span 3;
+}
+#col-3{
+	grid-column: span 3;
+}
+@media(max-width:480px){
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+    #col-2{
+   
+        grid-column: span 3;
+    }
+	.gallery-nav-blog{
+		flex-direction: column;
+	}
+}
+.scrolled {
+      background-color: black !important; /* Darker background on scroll */
+    }
+    
+    /* Change link color when scrolled */
+    .scrolled .nav-link {
+      color: white !important; /* Light link color */
+    }
+
+	
+	.store-footer .footer-area .footer-content ul.footer-ul li.footer-li.f-link {
+    width: calc(25% - 30px);
+}
+@media(min-width:1200px){
+	.store-footer .footer-area .footer-content ul.footer-ul li.footer-li.logo-info, .store-footer .footer-area .footer-content ul.footer-ul li.footer-li.store-info {
+    width: calc(25% - 30px);
+    
+}
+}
+@media(max-width:1200px){
+	.store-footer .footer-area .footer-content ul.footer-ul li.footer-li.logo-info, .store-footer .footer-area .footer-content ul.footer-ul li.footer-li.store-info {
+    width: calc(100% - 30px);
+    
+}
+
+.store-footer .footer-area .footer-content ul.footer-ul li.footer-li.f-link {
+    width: calc(100% - 30px);
+}
+}
+
+.footer_logos{
+	
+	
+	margin-bottom: 10px;
+	
+	
+}
+.foter_text{
+	font-size: 16px;
+	color: white;
+	font-family: Outfit,serif;
+}
+.siwj{
+	padding: 28px 0px;
+	position: relative;
+}
+
+.wijdwij {
+    position: absolute;
+    height: 228%;
+    left: 0;
+    left: -68px;
+    /* top: 50%; */
+    top: -89%;
+    width: 220px;
+    /* transform: translateY(-50%); */
+}
+.section-tb-paddingfooter{
+	padding: 100px 20px;
+}
+.nav-wrapper {
+	white-space: nowrap;
+}
+
+
+.custsett .navwidth{
+	flex: 0 0 auto;
+}
+ul.nav-tabs {
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-bottom: none;
+}
+.dynaresp{
+	flex-direction: column;	
+
+}
+ul.nav-tabs li.nav-item {
+    width: auto;
+	margin-right: 50px;
+	
+}
+@media(min-width:1399px) {
+	ul.nav-tabs	.nav-link {
+    font-size: 21px;
+    text-transform: uppercase;
+    padding: 19px 0;
+	color: black;
+	font-weight: 800;
+	
+}
+}
+@media(max-width:1399px) {
+	ul.nav-tabs	.nav-link {
+    font-size: 21px;
+    text-transform: uppercase;
+    padding: 0px 0;
+	color: black;
+	font-weight: 800;
+}
+}
+
+
+@media(max-width:786px){
+	ul.nav-tabs	.nav-link {
+		margin-bottom: 15px;
+	}
+}
+ul.nav-tabs li.nav-item a {
+    background-color: transparent;
+}
+
+ul.nav-tabs li.nav-item a.active, 
+ul.nav-tabs li.nav-item a:focus, 
+ul.nav-tabs li.nav-item a:hover {
+  color: #dba765;
+} 
+
+ul.nav-tabs li.nav-item {
+	display: inline-block;
+    text-align: left;
+}
+ul.nav-tabs li.nav-item:hover{
+   background-color: transparent;
+}
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-link-color);
+    --bs-nav-link-hover-color: transparent;
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+ul.nav-tabs li.nav-item a {
+    color: #060606;
+    padding: 0px 0px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: var(--border-radius);
+}
+ul.nav-tabs li.nav-item a.active, ul.nav-tabs li.nav-item a:focus, ul.nav-tabs li.nav-item a:hover {
+    color: #dba765;
+    background-color: transparent;
+	border-bottom: 3px solid #dba765;
+	
+	
+
+}
+		</style>
 	</head>
 	<body>
 		<!-- top notification start -->
 		
 		<!-- top notification end -->
 		<!-- header start -->
-		<header class="store-header" id="header">
-				<div class="header-area">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col">
-								<div class="header-block">
-									<div class="header-wrap logo">
-										<div class="logo-area">
-											<a href="index.html" class="logo"><img src="image/hotel-2/logo.png" class="img-fluid" alt="logo"></a>
-										</div>
-									</div>
-									<div class="header-wrap menu">
-										<div class="main-menu">
-											<ul class="menu-ul">
-												<!-- main nav-->
-												<li class="menu-li">
-													<a href="index.html" class="menu-link">Home</a>
-												</li>
-												<li class="menu-li">
-													<a href="about.html" class="menu-link">Overview</a>
-												</li>
-												<li class="menu-li">
-													<a href="#" data-bs-toggle="collapse" class="menu-link">
-														<span class="title">Rooms & Suites</span>
-														<span class="icon"><i class="feather-plus"></i></span>
-													</a>
-													<ul class="menu-drop-ul collapse" id="rooms-menu-drop">
-														<li class="menu-drop-li">
-															<a href="Suite.html" class="menu-drop-link">Suite Room</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="Super-Deluxe.html" class="menu-drop-link">Super Deluxe Room</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="Deluxe.html" class="menu-drop-link">Deluxe Room</a>
-														</li>
-														
-													</ul>
-												</li>
-												
-												<li class="menu-li">
-													<a href="#" class="menu-link">Meeting & Events</a>
-												</li>
-											
-												<li class="menu-li">
-													<a href="facilities.html" class="menu-link">Aminities</a>
-												</li>
-												<li class="menu-li">
-													<a href="#" data-bs-toggle="collapse" class="menu-link">
-														<span class="title">Other Pages</span>
-														<span class="icon"><i class="feather-plus"></i></span>
-													</a>
-													
-													<ul class="menu-drop-ul collapse" id="rooms-menu-drop">
-														<li class="menu-drop-li">
-															<a href="#" class="menu-drop-link">Health & Wellbeing</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="#" class="menu-drop-link">Safety Measure</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="#" class="menu-drop-link">Our Brands</a>
-														</li>
-														
-													</ul>
-												</li>
-												<li class="menu-li">
-													<a href="gallery.html" class="menu-link">Gallery</a>
-												</li>
-												<li class="menu-li">
-													<a href="contact-us.html" class="menu-link">Contact Us</a>
-												</li>
-													<!-- main nav -->
-												<!-- <li class="menu-li">
-													<a href="#single-menu-drop" data-bs-toggle="collapse" class="menu-link">
-														<span class="title">Home</span>
-														<span class="icon"><i class="feather-plus"></i></span>
-													</a>
-													<ul class="menu-drop-ul collapse" id="single-menu-drop">
-														<li class="menu-drop-li">
-															<a href="#rtl-box-1" class="menu-drop-collapse" data-bs-toggle="collapse">
-																<span class="title">The tempa 1</span>
-																<span class="icon"><i class="feather-plus"></i></span>
-															</a>
-															<ul class="sub-menu-ul collapse" id="rtl-box-1">
-																<li class="sub-menu-li">
-																	<a href="index.html" class="sub-menu-link">The tempa 1 ltr</a>
-																</li>
-																<li class="sub-menu-li">
-																	<a href="../hotel-rtl/index.html" class="sub-menu-link">The tempa 1 rtl</a>
-																</li>
-																<li class="sub-menu-li">
-																	<a href="../hotel-box/index.html" class="sub-menu-link">The tempa 1 box</a>
-																</li>
-															</ul>
-														</li>
-														<li class="menu-drop-li">
-															<a href="#rtl-box-2" class="menu-drop-collapse" data-bs-toggle="collapse">
-																<span class="title">The tempa 2</span>
-																<span class="icon"><i class="feather-plus"></i></span>
-															</a>
-															<ul class="sub-menu-ul collapse" id="rtl-box-2">
-																<li class="sub-menu-li">
-																	<a href="index-2.html" class="sub-menu-link">The tempa 2 ltr</a>
-																</li>
-																<li class="sub-menu-li">
-																	<a href="../hotel-rtl/index-2.html" class="sub-menu-link">The tempa 2 rtl</a>
-																</li>
-																<li class="sub-menu-li">
-																	<a href="../hotel-box/index-2.html" class="sub-menu-link">The tempa 2 box</a>
-																</li>
-															</ul>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-li">
-													<a href="#facilities-menu-drop" aria-expanded="true" data-bs-toggle="collapse" class="menu-link">
-														<span class="title">Facilities</span>
-														<span class="icon"><i class="feather-plus"></i></span>
-													</a>
-													<ul class="menu-drop-ul collapse show" id="facilities-menu-drop">
-														<li class="menu-drop-li">
-															<a href="room-grid.html" class="menu-drop-link">Beds</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="video.html" class="menu-drop-link">Swimming</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="room-detail.html" class="menu-drop-link">Parking</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="blog-details.html" class="menu-drop-link">Wi - fi</a>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-li">
-													<a href="#rooms-menu-drop" data-bs-toggle="collapse" class="menu-link">
-														<span class="title">Rooms</span>
-														<span class="icon"><i class="feather-plus"></i></span>
-													</a>
-													<ul class="menu-drop-ul collapse" id="rooms-menu-drop">
-														<li class="menu-drop-li">
-															<a href="room-grid.html" class="menu-drop-link">Room grid</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="room-list.html" class="menu-drop-link">Room list</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="room-detail.html" class="menu-drop-link">Room detail</a>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-li">
-													<a href="restaurant.html" class="menu-link">Restaurant</a>
-												</li>
-												<li class="menu-li">
-													<a href="contact-us.html" class="menu-link"><span class="title">Contact us</span></a>
-												</li>
-												<li class="menu-li">
-													<a href="#page-menu-drop" data-bs-toggle="collapse" class="menu-link">
-														<span class="title">Pages</span>
-														<span class="icon"><i class="feather-plus"></i></span>
-													</a>
-													<ul class="menu-drop-ul collapse" id="page-menu-drop">
-														<li class="menu-drop-li">
-															<a href="about.html" class="menu-drop-link">About us</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="membership.html" class="menu-drop-link">Membership</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="gallery.html" class="menu-drop-link">Gallery</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="pricing.html" class="menu-drop-link">Pricing</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="blog.html" class="menu-drop-link">Blog</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="blog-details.html" class="menu-drop-link">Blog details</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="promotions.html" class="menu-drop-link">Promotions</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="service.html" class="menu-drop-link">Service</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="video.html" class="menu-drop-link">Hotel video</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="404.html" class="menu-drop-link">404 page</a>
-														</li>
-														<li class="menu-drop-li">
-															<a href="comming-soon.html" class="menu-drop-link">Comming soon</a>
-														</li>
-													</ul>
-												</li> -->
-											</ul>
-										</div>
-									</div>
-									<div class="header-wrap right-block">
-										<ul class="right-block-ul">
-											<li class="right-block-li toggle-menu">
-												<a href="javascript:void(0)" class="right-block-link toggler-btn">
-													<div class="icon-block">
-														<span class="icon"><i class="feather-align-right"></i></span>
-													</div>
-												</a>
-											</li>
-											<!-- <li class="right-block-li search">
-												<a href="javascript:void(0)" class="right-block-link" data-bs-toggle="modal" data-bs-target="#searchModel">
-													<div class="icon-block">
-														<span class="icon"><i class="feather-search"></i></span>
-													</div>
-													<div class="text-block">
-														<p class="mini-title">Search</p>
-														<span class="main-title">Find our search</span>
-													</div>
-												</a>
-											</li>
-											<li class="right-block-li phone">
-												<a href="tel:(+254)0123456789" class="right-block-link">
-													<div class="icon-block">
-														<span class="icon"><i class="feather-phone-call"></i></span>
-													</div>
-													<div class="text-block">
-														<p class="mini-title">Phone number</p>
-														<span class="main-title">(+254) 0123 456 789</span>
-													</div>
-												</a>
-											</li>
-										</ul>
-									</div> -->
-								</div>
-							</div>
+		<nav class="navbar navbar-expand-xxl navbar-bg">
+			<div class="container">
+				<a href="" class="navbar-brand">
+					<img src="image/hotel-2/logo-01.png" alt="" width="155"  class="d-inline-block align-text-top">
+				</a>
+				<button class="navbar-toggler border border-0" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+						<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-top" id="offcanvasNavbar" tabindex="-1">
+					<div class="offcanvas-header">
+						<div class="offcanvas-title">
+							<h5><img src="image/hotel-2/logo-01.png" alt="" width="155"  class="d-inline-block align-text-top"></h5>
+						   
 						</div>
+						<button class="btn-close" data-bs-dismiss="offcanvas"></button>
+					</div>
+					
+					<div class="offcanvas-body">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item"><a href="index.html" target="_blank" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="about.html" target="_blank" class="nav-link">About us</a></li>
+							<li class="nav-item"><a href="rooms.html" target="_blank" class="nav-link">Rooms & Suits</a></li>
+							
+							<li class="nav-item"><a href="offers.html" target="_blank" class="nav-link">special offers</a></li>
+							
+							<li class="nav-item"><a href="amenities.html" target="_blank" class="nav-link">amenities</a></li>
+							
+							<li class="nav-item"><a href="#" target="_blank" class="nav-link">gallery</a></li>
+							
+						</ul>
 					</div>
 				</div>
-		</header>
+			</div>
+		</nav>
 		<!-- header end -->
 		<!-- breadcrumb start -->
 		<section class="breadcrumb-area section-tb-padding" style="background-image: url('image/breadcrumb.jpg');">
@@ -477,58 +759,53 @@
 		<!-- footer start -->
 		<!-- footer start -->
 		<footer class="store-footer">
-			<div class="footer-area section-tb-padding">
+			<div class="footer-area section-tb-paddingfooter">
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<!-- <div class="footer-newsletter section-b-padding">
-								<div class="newsletter-title">
-									<div class="section-capture">
-										<div class="section-title">
-											<h2>Subscribe to our newsletter !</h2>
-										</div>
-									</div>
-								</div>
-								<div class="newsletter-input">
-									<form>
-										<input type="text" name="email" placeholder="Enter your email address">
-										<a href="javascript:void(0)" class="news-btn btn-style">Subscribe</a>
-									</form>
-								</div>
-							</div> -->
 							<div class="footer-content">
 								<ul class="footer-ul">
 									<li class="footer-li logo-info">
-										<div class="footer-logo">
-											<a href="index-2.html" class="logo"><img src="image/hotel-2/logo-01.png" class="img-fluid" alt="image"></a>
+										<div class="footer_logos">
+											<div class="siwj">
+												<img src="image/hotel-2/logo-01.png" class="wijdwij" alt="">
+											</div>
 										</div>
-										
+										<div class="foter_text">
+											The cites of the word in classical literat, 
+											discovered the undoubtable combined with acomes 
+											from sections
+										</div>
 									</li>
-								
 									<li class="footer-li f-link">
-										<h4 class="footer-title">Quick Links</h4>
-										<a href="#followed-by" class="footer-title mobile" data-bs-toggle="collapse">
-											<span class="title">Quick Links</span>
+										<h4 class="footer-title">QUICK LINKS</h4>
+										<a href="#Information" class="footer-title mobile" data-bs-toggle="collapse">
+											<span class="title">QUICK LINKS</span>
 											<span class="icon"><i class="feather-plus"></i></span>
 										</a>
 										<ul class="collapse link-ul" id="Information">
 											<li class="link-li">
-												<a href="about.html" class="link">Overview</a>
+												<a href="index.html" class="link">Home</a>
 											</li>
 											<li class="link-li">
-												<a href="room-grid.html" class="link">Rooms &amp; Suits</a>
+												<a href="about.html" class="link">About us</a>
 											</li>
 											<li class="link-li">
-												<a href="facilities.html" class="link">Amenities</a>
+												<a href="rooms.html" class="link">Rooms & Suits</a>
 											</li>
 											<li class="link-li">
-												<a href="policies.html" class="link">Privacy Policies</a>
+												<a href="offers.html" class="link">Special Offers</a>
 											</li>
 											<li class="link-li">
-												<a href="#" class="link">Terms &amp; Condition</a>
+												<a href="amenities.html" class="link">Amenities</a>
 											</li>
+											<li class="link-li">
+												<a href="floricgallery.html" class="link">Gallery</a>
+											</li>
+											
 										</ul>
 									</li>
+									
 									<li class="footer-li f-link">
 										<h4 class="footer-title">Contact us</h4>
 										<a href="#contact-us" class="footer-title mobile" data-bs-toggle="collapse">
@@ -537,38 +814,37 @@
 										</a>
 										<ul class="collapse link-ul" id="contact-us">
 											<li class="link-li">
-												<a href="tel:+123006500650" class="link">1234567898</a>
+												<a href="tel:+123006500650" class="link">Phone Number</a>
 											</li>
 											<li class="link-li">
-												<a href="mailto:demokolly@gmail.com" class="link">test@gmail.com</a>
+												<a href="mailto:demokolly@gmail.com"
+													class="link">Email</a>
 											</li>
 											<li class="link-li">
-												<span class="link">Rajarhat, Kolkata, West Bengal</span>
+												<span class="link">Address</span>
 											</li>
-											<!-- <li class="link-li">
-												<span class="link">nv, 89156  united states</span>
-											</li> -->
+											<li class="link-li">
+												<span class="link">Address</span>
+											</li>
 										</ul>
 									</li>
 									<li class="footer-li store-info">
-										<h4 class="footer-title">Hotel Information</h4>
+										<h4 class="footer-title">HOTEL OPEN</h4>
 										<a href="#store-open" class="footer-title mobile" data-bs-toggle="collapse">
-											<span class="title">Store open</span>
+											<span class="title">HOTEL OPEN</span>
 											<span class="icon"><i class="feather-plus"></i></span>
 										</a>
 										<ul class="collapse link-ul" id="store-open">
 											<li class="link-li">
 												<span class="link label">Check In</span>
-												<span class="link text">12:00 pm</span>
+												<span class="link text">8:30am to 6:30pm</span>
 											</li>
 											<li class="link-li">
 												<span class="link label">Check Out</span>
-												<span class="link text">11:-00 pm</span>
+												<span class="link text">8:30am to 4:30pm</span>
 											</li>
+								
 											<li class="link-li">
-												<span class="empty"></span>
-											</li>
-											<li class="link-li"> 
 												<span class="link label">Restaurant</span>
 												<span class="color-text">all days opened</span>
 											</li>
@@ -585,7 +861,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="copyright-text">
-								<p>Powered By Colourstreak India Private Limited</p>
+								<p>Powered By XYZ Technologies</p>
 							</div>
 						</div>
 					</div>
@@ -816,6 +1092,46 @@
 		        <span style="--i:10;">.</span>
 	        </div>
 	    </div>
+
+		<script>
+			// JavaScript to toggle class on scroll
+			window.addEventListener("scroll", function () {
+				const navbar = document.querySelector(".navbar");
+				if (window.scrollY > 50) { // Adjust scroll threshold as needed
+					navbar.classList.add("scrolled");
+				} else {
+					navbar.classList.remove("scrolled");
+				}
+			});
+		</script>
+	
+	<script>
+		// JavaScript to toggle sticky class on scroll
+		window.addEventListener("scroll", function() {
+		  const navbar = document.querySelector(".navbar");
+		  if (window.scrollY > 600) { // Adjust this value to the desired scroll point
+			navbar.classList.add("sticky");
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		});
+	  </script>
+	  <script>
+		function verticalnav () {
+			const windoInnersize = window.innerWidth;
+			const theelemt =	document.querySelector('.custsett');
+			// console.log(theelemt);
+			// console.log(windoInnersize);
+			if (windoInnersize < 786) {
+				theelemt.classList.add('dynaresp');
+			}
+			else {
+				theelemt.classList.remove('dynaresp');
+			}
+		}
+		document.addEventListener("resize", verticalnav);
+		window.addEventListener("resize", verticalnav);
+	  </script>
         <!-- preloader end -->
 		<!-- bootstrap js -->
         <script src="js/bootstrap.bundle.min.js"></script>
