@@ -799,7 +799,7 @@
     .service-area .service-content .service-block ul.service-ul li.service-li {
         width: calc(100% - 12px);
         margin-left: 12px;
-        padding: 30px 12px;
+        
     }
     .service-area .service-content .service-block.s-btn ul.service-ul li.service-li {
         width: calc(100% - 12px);
