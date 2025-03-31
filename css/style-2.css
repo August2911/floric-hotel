@@ -798,12 +798,11 @@
     }
     .service-area .service-content .service-block ul.service-ul li.service-li {
         width: calc(100% - 12px);
-        margin-left: 12px;
+       
         
     }
     .service-area .service-content .service-block.s-btn ul.service-ul li.service-li {
         width: calc(100% - 12px);
-        margin-left: 12px;
         margin-top: 60px;
     }
     .service-area .service-content .service-block.s-box ul.service-ul li.service-li:nth-child(even) {
